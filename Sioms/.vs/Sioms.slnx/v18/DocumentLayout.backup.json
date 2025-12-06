@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\CS4\\Advance_Programming\\Sioms\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FB6C1823-2F9D-4171-BD59-2F9CC821FD4C}|Sioms\\Sioms.csproj|e:\\cs4\\advance_programming\\sioms\\sioms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FB6C1823-2F9D-4171-BD59-2F9CC821FD4C}|Sioms\\Sioms.csproj|solutionrelative:sioms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB6C1823-2F9D-4171-BD59-2F9CC821FD4C}|Sioms\\Sioms.csproj|e:\\cs4\\advance_programming\\sioms\\sioms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB6C1823-2F9D-4171-BD59-2F9CC821FD4C}|Sioms\\Sioms.csproj|solutionrelative:sioms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB6C1823-2F9D-4171-BD59-2F9CC821FD4C}|Sioms\\Sioms.csproj|e:\\cs4\\advance_programming\\sioms\\sioms\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB6C1823-2F9D-4171-BD59-2F9CC821FD4C}|Sioms\\Sioms.csproj|solutionrelative:sioms\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB6C1823-2F9D-4171-BD59-2F9CC821FD4C}|Sioms\\Sioms.csproj|e:\\cs4\\advance_programming\\sioms\\sioms\\migrations\\20251206054926_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB6C1823-2F9D-4171-BD59-2F9CC821FD4C}|Sioms\\Sioms.csproj|solutionrelative:sioms\\migrations\\20251206054926_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB6C1823-2F9D-4171-BD59-2F9CC821FD4C}|Sioms\\Sioms.csproj|e:\\cs4\\advance_programming\\sioms\\sioms\\models\\stockmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB6C1823-2F9D-4171-BD59-2F9CC821FD4C}|Sioms\\Sioms.csproj|solutionrelative:sioms\\models\\stockmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB6C1823-2F9D-4171-BD59-2F9CC821FD4C}|Sioms\\Sioms.csproj|e:\\cs4\\advance_programming\\sioms\\sioms\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB6C1823-2F9D-4171-BD59-2F9CC821FD4C}|Sioms\\Sioms.csproj|solutionrelative:sioms\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB6C1823-2F9D-4171-BD59-2F9CC821FD4C}|Sioms\\Sioms.csproj|e:\\cs4\\advance_programming\\sioms\\sioms\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB6C1823-2F9D-4171-BD59-2F9CC821FD4C}|Sioms\\Sioms.csproj|solutionrelative:sioms\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB6C1823-2F9D-4171-BD59-2F9CC821FD4C}|Sioms\\Sioms.csproj|e:\\cs4\\advance_programming\\sioms\\sioms\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB6C1823-2F9D-4171-BD59-2F9CC821FD4C}|Sioms\\Sioms.csproj|solutionrelative:sioms\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 245,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20251206054926_InitialCreate.cs",
+              "DocumentMoniker": "E:\\CS4\\Advance_Programming\\Sioms\\Sioms\\Migrations\\20251206054926_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Sioms\\Migrations\\20251206054926_InitialCreate.cs",
+              "ToolTip": "E:\\CS4\\Advance_Programming\\Sioms\\Sioms\\Migrations\\20251206054926_InitialCreate.cs",
+              "RelativeToolTip": "Sioms\\Migrations\\20251206054926_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T05:49:29.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StockMovement.cs",
+              "DocumentMoniker": "E:\\CS4\\Advance_Programming\\Sioms\\Sioms\\Models\\StockMovement.cs",
+              "RelativeDocumentMoniker": "Sioms\\Models\\StockMovement.cs",
+              "ToolTip": "E:\\CS4\\Advance_Programming\\Sioms\\Sioms\\Models\\StockMovement.cs",
+              "RelativeToolTip": "Sioms\\Models\\StockMovement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T05:42:51.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Product.cs",
+              "DocumentMoniker": "E:\\CS4\\Advance_Programming\\Sioms\\Sioms\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Sioms\\Models\\Product.cs",
+              "ToolTip": "E:\\CS4\\Advance_Programming\\Sioms\\Sioms\\Models\\Product.cs",
+              "RelativeToolTip": "Sioms\\Models\\Product.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T05:42:24.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Supplier.cs",
+              "DocumentMoniker": "E:\\CS4\\Advance_Programming\\Sioms\\Sioms\\Models\\Supplier.cs",
+              "RelativeDocumentMoniker": "Sioms\\Models\\Supplier.cs",
+              "ToolTip": "E:\\CS4\\Advance_Programming\\Sioms\\Sioms\\Models\\Supplier.cs",
+              "RelativeToolTip": "Sioms\\Models\\Supplier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T05:41:59.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Category.cs",
+              "DocumentMoniker": "E:\\CS4\\Advance_Programming\\Sioms\\Sioms\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Sioms\\Models\\Category.cs",
+              "ToolTip": "E:\\CS4\\Advance_Programming\\Sioms\\Sioms\\Models\\Category.cs",
+              "RelativeToolTip": "Sioms\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T05:41:19.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "E:\\CS4\\Advance_Programming\\Sioms\\Sioms\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Sioms\\Data\\AppDbContext.cs",
+              "ToolTip": "E:\\CS4\\Advance_Programming\\Sioms\\Sioms\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Sioms\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T05:39:10.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\CS4\\Advance_Programming\\Sioms\\Sioms\\appsettings.json",
+              "RelativeDocumentMoniker": "Sioms\\appsettings.json",
+              "ToolTip": "E:\\CS4\\Advance_Programming\\Sioms\\Sioms\\appsettings.json",
+              "RelativeToolTip": "Sioms\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-06T05:38:04.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\CS4\\Advance_Programming\\Sioms\\Sioms\\Program.cs",
+              "RelativeDocumentMoniker": "Sioms\\Program.cs",
+              "ToolTip": "E:\\CS4\\Advance_Programming\\Sioms\\Sioms\\Program.cs",
+              "RelativeToolTip": "Sioms\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T05:25:05.068Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
