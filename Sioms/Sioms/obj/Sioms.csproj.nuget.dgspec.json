@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\CS4\\Advance_Programming\\Sioms\\Sioms\\Sioms.csproj": {}
+    "E:\\CS4\\Advance_Programming\\SIOMS_APP\\SIOMS\\Sioms\\Sioms\\Sioms.csproj": {}
   },
   "projects": {
-    "E:\\CS4\\Advance_Programming\\Sioms\\Sioms\\Sioms.csproj": {
+    "E:\\CS4\\Advance_Programming\\SIOMS_APP\\SIOMS\\Sioms\\Sioms\\Sioms.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\CS4\\Advance_Programming\\Sioms\\Sioms\\Sioms.csproj",
+        "projectUniqueName": "E:\\CS4\\Advance_Programming\\SIOMS_APP\\SIOMS\\Sioms\\Sioms\\Sioms.csproj",
         "projectName": "Sioms",
-        "projectPath": "E:\\CS4\\Advance_Programming\\Sioms\\Sioms\\Sioms.csproj",
+        "projectPath": "E:\\CS4\\Advance_Programming\\SIOMS_APP\\SIOMS\\Sioms\\Sioms\\Sioms.csproj",
         "packagesPath": "C:\\Users\\aabidkhokhar\\.nuget\\packages\\",
-        "outputPath": "E:\\CS4\\Advance_Programming\\Sioms\\Sioms\\obj\\",
+        "outputPath": "E:\\CS4\\Advance_Programming\\SIOMS_APP\\SIOMS\\Sioms\\Sioms\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Visual_Programming\\shared\\NuGetPackages"
@@ -51,23 +51,41 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.CodeAnalysis.CSharp": {
+              "target": "Package",
+              "version": "[4.8.0, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp.Workspaces": {
+              "target": "Package",
+              "version": "[4.8.0, )"
+            },
+            "Microsoft.CodeAnalysis.Common": {
+              "target": "Package",
+              "version": "[4.8.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.11, )"
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.11, )"
+              "version": "[8.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.11, )"
+              "version": "[8.0.4, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[8.0.7, )"
             }
           },
           "imports": [

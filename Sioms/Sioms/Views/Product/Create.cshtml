@@ -1,0 +1,139 @@
+﻿@* @model SIOMS.Models.Product
+
+<h2>Create Product</h2>
+
+<form asp-action="Create" method="post">
+
+    <div class="form-group">
+        <label>Name</label>
+        <input asp-for="Name" class="form-control"/>
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Description</label>
+        <input asp-for="Description" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+        <label>Category</label>
+        <select asp-for="CategoryId" class="form-control"
+                asp-items="@(new SelectList(ViewBag.Categories, "Id", "Name"))">
+            <option value="">Select Category</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Supplier</label>
+        <select asp-for="SupplierId" class="form-control"
+                asp-items="@(new SelectList(ViewBag.Suppliers, "Id", "Name"))">
+            <option value="">Select Supplier</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Price</label>
+        <input asp-for="Price" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+        <label>Stock Quantity</label>
+        <input asp-for="StockQuantity" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+        <label>Minimum Stock Level</label>
+        <input asp-for="MinimumStockLevel" class="form-control"/>
+    </div>
+
+    <button class="btn btn-success" type="submit">Save</button>
+
+</form> *@
+
+
+
+
+
+
+
+@model SIOMS.Models.Product
+
+@{
+    ViewData["Title"] = "Create Product";
+}
+
+<h2>Create Product</h2>
+
+@using (Html.BeginForm("Create", "Products", FormMethod.Post, new { @class = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" placeholder="Enter product name" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <input asp-for="Description" class="form-control" placeholder="Enter short description" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+        <div class="form-group">
+        <label>Category</label>
+        <select asp-for="CategoryId" class="form-control"
+                asp-items="@(new SelectList(ViewBag.Categories, "Id", "Name"))">
+            <option value="">Select Category</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Supplier</label>
+        <select asp-for="SupplierId" class="form-control"
+                asp-items="@(new SelectList(ViewBag.Suppliers, "Id", "Name"))">
+            <option value="">Select Supplier</option>
+        </select>
+    </div>
+
+    @* <div class="form-group">
+        <label asp-for="CategoryId"></label>
+        <select asp-for="CategoryId" class="form-control" asp-items="@(ViewBag.Categories as SelectList)">
+            <option value="">Select Category</option>
+        </select>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
+    </div> *@
+
+    @* <div class="form-group">
+        <label asp-for="SupplierId"></label>
+        <select asp-for="SupplierId" class="form-control" asp-items="@(ViewBag.Suppliers as SelectList)">
+            <option value="">Select Supplier</option>
+        </select>
+        <span asp-validation-for="SupplierId" class="text-danger"></span>
+    </div> *@
+
+    <div class="form-group">
+        <label asp-for="Price"></label>
+        <input asp-for="Price" class="form-control" placeholder="0.00" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="StockQuantity"></label>
+        <input asp-for="StockQuantity" class="form-control" placeholder="Quantity in stock" />
+        <span asp-validation-for="StockQuantity" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="MinimumStockLevel"></label>
+        <input asp-for="MinimumStockLevel" class="form-control" placeholder="Minimum stock level" />
+        <span asp-validation-for="MinimumStockLevel" class="text-danger"></span>
+    </div>
+
+    <button class="btn btn-success" type="submit">Save</button>
+}
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
