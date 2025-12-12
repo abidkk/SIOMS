@@ -1,0 +1,27 @@
+﻿@model IEnumerable<SIOMS.Models.PurchaseOrder>
+
+<h2>Purchase Orders</h2>
+
+<a class="btn btn-primary" asp-action="Create">New Purchase Order</a>
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>Supplier</th>
+            <th>Date</th>
+            <th>Total</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var o in Model)
+        {
+            <tr>
+                <td>@o.Supplier.Name</td>
+                <td>@o.OrderDate.ToShortDateString()</td>
+                <td>@o.TotalAmount</td>
+                <td><a asp-action="Details" asp-route-id="@o.Id">Details</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

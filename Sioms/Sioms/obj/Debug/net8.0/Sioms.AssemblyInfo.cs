@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sioms")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+118bcf61b92e33bc8effa3ae0bb92c21abc93d9b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc89c76c3ccb0276e70a50844728403004494da3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sioms")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sioms")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

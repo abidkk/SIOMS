@@ -1,0 +1,33 @@
+﻿@model IEnumerable<SIOMS.Models.Customer>
+
+<h2>Customers</h2>
+
+<a class="btn btn-primary" asp-action="Create">Add New Customer</a>
+
+<table class="table table-bordered mt-3">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in Model)
+        {
+            <tr>
+                <td>@c.Name</td>
+                <td>@c.Email</td>
+                <td>@c.Phone</td>
+                <td>@c.Address</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@c.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@c.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@c.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

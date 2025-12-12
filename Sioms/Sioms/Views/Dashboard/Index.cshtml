@@ -1,0 +1,97 @@
+﻿@using SIOMS.Models
+@using SIOMS.Models.Enums
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h2 class="mt-3">📊 Inventory Dashboard</h2>
+
+<div class="row mt-4">
+
+    <!-- Total Products -->
+    <div class="col-md-3">
+        <div class="card bg-primary text-white p-3">
+            <h4>Total Products</h4>
+            <h2>@ViewBag.TotalProducts</h2>
+        </div>
+    </div>
+
+    <!-- Total Stock -->
+    <div class="col-md-3">
+        <div class="card bg-success text-white p-3">
+            <h4>Total Stock Qty</h4>
+            <h2>@ViewBag.TotalStockQty</h2>
+        </div>
+    </div>
+
+    <!-- Inventory Value -->
+    <div class="col-md-3">
+        <div class="card bg-info text-white p-3">
+            <h4>Inventory Value</h4>
+            <h2>$@ViewBag.InventoryValue</h2>
+        </div>
+    </div>
+
+    <!-- Low Stock -->
+    <div class="col-md-3">
+        <div class="card bg-danger text-white p-3">
+            <h4>Low Stock Items</h4>
+            <h2>@ViewBag.LowStockCount</h2>
+        </div>
+    </div>
+
+</div>
+
+<hr />
+
+<h3 class="mt-4">⚠ Low Stock Products</h3>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Qty</th>
+            <th>Minimum</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in ViewBag.LowStockProducts)
+        {
+            <tr class="table-danger">
+                <td>@p.Name</td>
+                <td>@p.StockQuantity</td>
+                <td>@p.MinimumStockLevel</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<hr />
+
+<h3>📦 Recent Stock Movements</h3>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Product</th>
+            <th>Change</th>
+            <th>Final Stock</th>
+            <th>Type</th>
+            <th>Reference</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var m in ViewBag.RecentMovements)
+        {
+            <tr>
+                <td>@m.MovementDate.ToString("yyyy-MM-dd HH:mm")</td>
+                <td>@m.Product.Name</td>
+                <td>@m.QuantityChanged</td>
+                <td>@m.FinalStock</td>
+                <td>@m.MovementType</td>
+                <td>@m.ReferenceNumber</td>
+            </tr>
+        }
+    </tbody>
+</table>

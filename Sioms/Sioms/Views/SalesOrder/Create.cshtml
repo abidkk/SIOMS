@@ -1,0 +1,67 @@
+﻿@model SIOMS.Models.SalesOrder
+
+<h2>Create Sales Order</h2>
+
+<form asp-action="Create" method="post">
+
+    <div class="form-group">
+        <label>Customer</label>
+        <select asp-for="CustomerId" class="form-control"
+                asp-items="@(new SelectList(ViewBag.Customers, "Id", "Name"))">
+            <option value="">Select Customer</option>
+        </select>
+    </div>
+
+    <h4 class="mt-4">Products</h4>
+
+    <table class="table" id="itemsTable">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Qty</th>
+                <th>Unit Price</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <button type="button" class="btn btn-secondary" onclick="addRow()">Add Item</button>
+    <button type="submit" class="btn btn-success mt-3">Save</button>
+
+</form>
+
+@section Scripts {
+    <script>
+        function addRow() {
+            var row = `
+        <tr>
+            <td>
+                <select name="items[0].ProductId" class="form-control">
+                    @foreach (var p in (List<SIOMS.Models.Product>)ViewBag.Products)
+                    {
+                            <option value="@p.Id">@p.Name (Stock: @p.StockQuantity)</option>
+                    }
+                </select>
+            </td>
+            <td><input name="items[0].Quantity" type="number" class="form-control" /></td>
+            <td><input name="items[0].UnitPrice" type="number" step="0.01" class="form-control" /></td>
+            <td><button type="button" class="btn btn-danger" onclick="removeRow(this)">X</button></td>
+        </tr>`;
+
+            document.querySelector("#itemsTable tbody").insertAdjacentHTML("beforeend", row);
+
+            let rows = document.querySelectorAll("#itemsTable tbody tr");
+            rows.forEach((r, i) => {
+                r.querySelectorAll("select, input").forEach(input => {
+                    let name = input.getAttribute("name");
+                    input.setAttribute("name", name.replace(/\[\d+\]/, `[${i}]`));
+                });
+            });
+        }
+
+        function removeRow(btn) {
+            btn.closest("tr").remove();
+        }
+    </script>
+}

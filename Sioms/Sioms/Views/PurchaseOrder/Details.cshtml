@@ -1,0 +1,32 @@
+﻿@model SIOMS.Models.PurchaseOrder
+
+<h2>Purchase Order Details</h2>
+
+<p><strong>Supplier:</strong> @Model.Supplier.Name</p>
+<p><strong>Date:</strong> @Model.OrderDate.ToShortDateString()</p>
+
+<h4>Items</h4>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Items)
+        {
+            <tr>
+                <td>@item.Product.Name</td>
+                <td>@item.Quantity</td>
+                <td>@item.UnitPrice</td>
+                <td>@item.LineTotal</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p><strong>Total Amount:</strong> @Model.TotalAmount</p>

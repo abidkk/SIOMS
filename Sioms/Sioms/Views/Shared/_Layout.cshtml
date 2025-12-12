@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="~/Sioms.styles.css" asp-append-version="true" />
 </head>
 <body>
+    @using SIOMS.Helpers
+
+    @foreach (var alert in AlertStore.GetAll())
+    {
+        <div class="alert alert-warning text-center">
+            @alert
+        </div>
+    }
+
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
@@ -19,6 +28,10 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+    <a class="nav-link text-dark" asp-controller="Dashboard" asp-action="Index">Dashboard</a>
+</li>
+
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
@@ -32,6 +45,23 @@
 <li class="nav-item">
     <a class="nav-link text-dark" asp-controller="Product" asp-action="Index">Product</a>
 </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Customer" asp-action="Index">Customer</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="PurchaseOrder" asp-action="Index">Purchase Order</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="SalesOrder" asp-action="Index">Sales Order</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="StockMovement" asp-action="Index">Stock Movement</a>
+                        </li>
+
+
                         @* <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li> *@
